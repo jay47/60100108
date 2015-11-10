@@ -43,7 +43,7 @@ app.use(methodOverride('_method', {methods: ['POST', 'GET']}));
 app.use(session({
   resave: true,
   saveUninitialized: true,
-  secret: 'sldfnwlksfsjdkwjrwwejksdfsd;k'
+  secret: 'sldfnwlksfsjdkwjrwwejksdfsdk'
 }));
 app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
