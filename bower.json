@@ -1,0 +1,20 @@
+{
+  "name": "60100108-wp",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "font-awesome": "fontawesome#~4.4.0",
+    "bootstrap": "~3.3.5"
+  }
+}
