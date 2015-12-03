@@ -1,21 +1,30 @@
-extends layout
+doctype html
+html(lang='ko')
+  head
+    block title
+      title 60100108
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap-theme.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/bower_components/lodash/lodash.min.js')
+    script(src='/bower_components/moment/min/moment.min.js')
+  body
+    block top-nav
+      include ./includes/topnav
+    block hero-unit
+    .main-content
+      if flashMessages
+        each texts, type in flashMessages
+          .container
+            .alert(class='alert-#{type}')
+              each msg in texts
+                p= msg           
+      block content
 
-block hero-unit
-  .jumbotron
-    .container
-      h1 BIGBANG-TODO
-
-block content
-  .container
-    .row
-      .col-md-6
-        h3 서비스 목적
-        p 본 서비스는 웹프로그래밍 수업을 위해서 sample로 만들어보는 것입니다. 
-      .col-md-6
-        h3 주요 기능
-        ul
-          li 사용자 관리
-          li 할 일 기록
-          li 기록 내용: 분류, 내용, 중요도, deadline
-          li 완료된 일 체크
-  
+    block footer
+      include ./includes/footer
