@@ -105,19 +105,19 @@ a {
       margin: 20px 0;
       color: #bbb; }
 
-form.todos {
+form.survey {
   width: 100%;
   margin: 0 0 1em 0;
   padding: 1em;
   background: #acddf2; }
-  form.todos .main input[type='text'] {
+  form.survey .main input[type='text'] {
     font-size: 1.4em;
     border: 1px solid #2c9cd2;
     padding: 0.5em 1em;
     margin-bottom: 1em;
     width: 100%;
     box-sizing: border-box; }
-  form.todos .actions button {
+  form.survey .actions button {
     margin-top: 1em; }
 
 .tasks {
